@@ -1,0 +1,63 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Distance Price Calculator API",
+      "description": "API to calculate distance and price based on source and destination",
+      "version": "1.0.0"
+    },
+    "paths": {
+      "/calculate": {
+        "post": {
+          "summary": "Calculate distance and price",
+          "description": "Calculates the distance and price based on source and destination coordinates",
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "source": {
+                      "type": "number",
+                      "description": "Source location"
+                    },
+                    "destination": {
+                      "type": "number",
+                      "description": "Destination location"
+                    }
+                  },
+                  "required": ["source", "destination"]
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Successful operation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "distance": {
+                        "type": "number",
+                        "description": "Calculated distance"
+                      },
+                      "price": {
+                        "type": "number",
+                        "description": "Calculated price"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid request"
+            }
+          }
+        }
+      }
+    }
+  }
+  
