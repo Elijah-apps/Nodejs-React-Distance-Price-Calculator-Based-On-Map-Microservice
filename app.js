@@ -40,7 +40,7 @@ app.post('/calculate', (req, res) => {
     const { source, destination,percost} = req.body;
     // Validate input
     if (!source || !destination) {
-        return res.status(400).json({ error: 'Source and destination required' });
+        return res.status(400).json({ error: 'Source, per cost and  destination required' });
     }
 
     // Calculate distance
