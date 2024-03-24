@@ -18,9 +18,14 @@ This project consists of frontend and backend components. Follow the steps below
 
 ### Backend
 
-1. Navigate to the backend folder.
+1. Clone Directory
 
 2. Install dependencies:
 
    ```bash
    npm install
+
+3. 2. Run Project
+
+   ```bash
+   npm run dev

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ pageTitle }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto mt-10">
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h1 class="text-2xl font-semibold mb-4 text-center">Nodejs Distance Price Calculator Microservice <center></br>By Elijah Ekpen Mensah</center></h1>
+            <p class="text-danger text-red ">You get the REST API Full Documentation from <a style="color:red;font-weight:900" href="/api-docs"/>here</a></p>
+            
+            
+            <form>
+                <div class="mb-4">
+                    <label for="percost" class="block text-sm font-medium text-gray-700">Per Cost:</label>
+                    <input type="text" id="percost" name="percost" class="mt-1 p-2 w-full rounded-md border border-gray-300">
+                </div>
+                <div class="mb-4">
+                    <label for="destination" class="block text-sm font-medium text-gray-700">Destination:</label>
+                    <input type="text" id="destination" name="destination" class="mt-1 p-2 w-full rounded-md border border-gray-300">
+                </div>
+                <div class="mb-4">
+                    <label for="inputLabel" class="block text-sm font-medium text-gray-700">Input Label:</label>
+                    <input type="text" id="inputLabel" name="inputLabel" class="mt-1 p-2 w-full rounded-md border border-gray-300">
+                </div>
+                <div>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

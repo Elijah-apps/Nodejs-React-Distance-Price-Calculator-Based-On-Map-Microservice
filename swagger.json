@@ -1,7 +1,7 @@
 {
     "openapi": "3.0.0",
     "info": {
-      "title": "Distance Price Calculator API",
+      "title": "Distance Price Calculator API Microservice by Elijah Ekpen Mensah",
       "description": "API to calculate distance and price based on source and destination",
       "version": "1.0.0"
     },
@@ -19,14 +19,19 @@
                   "properties": {
                     "source": {
                       "type": "number",
-                      "description": "Source location"
+                      "description": "Source location in KM"
                     },
                     "destination": {
                       "type": "number",
-                      "description": "Destination location"
+                      "description": "Destination location in KM"
+                    },
+                  "percost": {
+                      "type": "number",
+                      "description": "Percost price"
                     }
+                  
                   },
-                  "required": ["source", "destination"]
+                  "required": ["source", "destination","percost"]
                 }
               }
             }
